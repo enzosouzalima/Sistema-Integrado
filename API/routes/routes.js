@@ -36,8 +36,8 @@ router.post('/post', async (req, res) => {
     return res.status(200).json(nova);
 });
 
-// ROTA GET: Obter todas as tarefas (getAll)
-router.get('/getAll', async (req, res) => {
+// ROTA GET: Obter todas as tarefas (getAll e getall)
+router.get(['/getAll', '/getall'], async (req, res) => {
     if (mongoose.connection.readyState === 1) {
         try {
             const resultados = await modeloTarefa.find();
