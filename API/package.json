@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js \"mongodb+srv://ProjetoSistemasIntegrados:SistemasIntegrados@cluster0.p3xhbzg.mongodb.net/tarefasDB?retryWrites=true&w=majority\"",
+    "start": "node index.js \"mongodb+srv://ezolima3000_db_user:RemnyItq50Omdp4Q@cluster0.0cl4e64.mongodb.net/tarefasDB?retryWrites=true&w=majority\"",
+    "start:antigo": "node index.js \"mongodb+srv://ProjetoSistemasIntegrados:SistemasIntegrados@cluster0.p3xhbzg.mongodb.net/tarefasDB?retryWrites=true&w=majority\"",
     "dev": "nodemon index.js"
   },
   "keywords": [],

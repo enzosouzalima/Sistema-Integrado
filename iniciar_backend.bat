@@ -14,5 +14,7 @@ for /f "tokens=5" %%a in ('netstat -aon ^| findstr :3000') do (
     taskkill /F /PID %%a >nul 2>&1
 )
 
-node index.js "mongodb+srv://ProjetoSistemasIntegrados:SistemasIntegrados@cluster0.p3xhbzg.mongodb.net/tarefasDB?retryWrites=true&w=majority"
+:: Banco anterior mantido como backup:
+:: node index.js "mongodb+srv://ProjetoSistemasIntegrados:SistemasIntegrados@cluster0.p3xhbzg.mongodb.net/tarefasDB?retryWrites=true&w=majority"
+node index.js "mongodb+srv://ezolima3000_db_user:RemnyItq50Omdp4Q@cluster0.0cl4e64.mongodb.net/tarefasDB?retryWrites=true&w=majority"
 pause

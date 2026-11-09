@@ -4,7 +4,9 @@ console.log('Teste gravacao de dados no banco remoto');
 
 // Get arguments passed on command line
 var userArgs = process.argv.slice(2);
-var mongoDB = userArgs[0] || "mongodb+srv://ProjetoSistemasIntegrados:SistemasIntegrados@cluster0.p3xhbzg.mongodb.net/tarefasDB?retryWrites=true&w=majority";
+// Banco anterior mantido como backup:
+// var mongoDB_antigo = "mongodb+srv://ProjetoSistemasIntegrados:SistemasIntegrados@cluster0.p3xhbzg.mongodb.net/tarefasDB?retryWrites=true&w=majority";
+var mongoDB = userArgs[0] || "mongodb+srv://ezolima3000_db_user:RemnyItq50Omdp4Q@cluster0.0cl4e64.mongodb.net/tarefasDB?retryWrites=true&w=majority";
 
 var Tarefa = require('./models/tarefa');
 var mongoose = require('mongoose');

@@ -23,7 +23,9 @@ app.listen(PORT, () => {
 
 // Obtendo os parametros passados pela linha de comando
 var userArgs = process.argv.slice(2);
-var mongoURL = userArgs[0] || "mongodb+srv://ProjetoSistemasIntegrados:SistemasIntegrados@cluster0.p3xhbzg.mongodb.net/tarefasDB?retryWrites=true&w=majority";
+// Banco anterior mantido como backup:
+// var mongoURL_antigo = "mongodb+srv://ProjetoSistemasIntegrados:SistemasIntegrados@cluster0.p3xhbzg.mongodb.net/tarefasDB?retryWrites=true&w=majority";
+var mongoURL = userArgs[0] || "mongodb+srv://ezolima3000_db_user:RemnyItq50Omdp4Q@cluster0.0cl4e64.mongodb.net/tarefasDB?retryWrites=true&w=majority";
 
 // Configurando a conexao com o Banco de Dados
 var mongoose = require('mongoose');
