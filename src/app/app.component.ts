@@ -18,7 +18,7 @@ export class AppComponent {
   apiURL: string;
 
   constructor(private http: HttpClient) {
-    this.apiURL = 'https://sistema-integrado-a8s9.onrender.com';
+    this.apiURL = 'https://enzo-156503-kevin-204515-uwmg.onrender.com';
     this.READ_tarefas();
   }
 
